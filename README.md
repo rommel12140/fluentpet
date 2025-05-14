@@ -1,51 +1,53 @@
-# Welcome to your Expo app 👋
+PetSpeak – FluentPet-Style Demo App
+A cross-platform mobile demo built in 2 days to showcase expertise in React Native, Expo, and TypeScript. PetSpeak replicates the core user journeys of the FluentPet app—device pairing, pet profiles, sound feedback, and activity history—so you can quickly evaluate my ability to architect, implement, and ship production-ready mobile features.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+🔥 Key Features
+Authentication
+Email/password login with client-side validation and a “Preparing Pets…” loading screen.
 
-## Get started
+Pet Profile
+View and edit your pet’s name, age, and avatar (with expo-image-picker).
 
-1. Install dependencies
+Button Pairing
+Two-step mock BLE/Wi-Fi provisioning flow:
 
-   ```bash
-   npm install
-   ```
+Confirm SSID & “Connect Base”
 
-2. Start the app
+“Pair Button” tap → toast confirmation
 
-   ```bash
-   npx expo start
-   ```
+Button Grid
+Create, update, and delete custom buttons with label, color picker, and sound-preview toggle.
 
-In the output, you'll find options to open the app in a
+Realtime Feedback
+Logs each button press, plays TTS via expo-speech, and displays a Recent Activity card.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+History
+Full activity log with clear / reset functionality.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+State Management
+Redux Toolkit + redux-persist for type-safe, persistent global state.
 
-## Get a fresh project
+Animations & UI Polish
+Lottie loading paw animations; modern, rounded design with dynamic theming.
 
-When you're ready, run:
+Testing & CI/CD
+Jest + React Testing Library unit/integration tests; GitHub Actions pipeline for build → lint → test → Expo preview.
 
-```bash
-npm run reset-project
-```
+🚀 Tech Stack
+Framework: React Native · Expo SDK
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Language: TypeScript
 
-## Learn more
+State: Redux Toolkit · redux-persist
 
-To learn more about developing your project with Expo, look at the following resources:
+Animations: lottie-react-native
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Audio & TTS: expo-av · expo-speech
 
-## Join the community
+Networking Mock: Stubs for BLE (react-native-ble-plx) & MQTT/WebSocket
 
-Join our community of developers creating universal apps.
+Testing: Jest · React Testing Library
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# fluentpet
+CI: GitHub Actions
+
+Code Quality: ESLint · Prettier
