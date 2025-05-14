@@ -6,7 +6,7 @@ A cross-platform mobile proof-of-concept built in **2 days** to showcase experti
 
 ## 📺 Demo Video
 
-[Watch the walkthrough on Google Drive](https://your-google-drive-link)
+[Watch the walkthrough on Google Drive]([https://your-google-drive-link](https://drive.google.com/drive/folders/1_8ipDoCw9udn45N-2z2WFHG8SwQLPZGQ?usp=drive_link))
 
 ---
 
