@@ -48,10 +48,6 @@ export default function LoginScreen() {
       return;
     }
 
-    if (name !== 'Demo Rommel' || pass !== 'demo123') {       // fake auth
-      setError('Invalid email or password');
-      return;
-    }
 
     name.trim() && pass.trim() && dispatch(login(name.trim()));
     router.replace('/loading');   // 4-s “Preparing Pets” screen
