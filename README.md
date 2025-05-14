@@ -1,51 +1,73 @@
-# Welcome to your Expo app 👋
+# PetSpeak – FluentPet-Style FRONT END ONLY Mock-Demo App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A cross-platform mobile proof-of-concept built in **2 days** to showcase expertise in React Native, Expo, and TypeScript. PetSpeak mirrors the core user journeys of the FluentPet app—device pairing, pet profiles, sound feedback, and activity history—so you can quickly evaluate my ability to architect, implement, and ship production-ready mobile features.
 
-## Get started
+---
 
-1. Install dependencies
+## 📺 Demo Video
 
-   ```bash
-   npm install
-   ```
+[CLICK HERE to Watch the walkthrough on Google Drive](https://drive.google.com/drive/folders/1_8ipDoCw9udn45N-2z2WFHG8SwQLPZGQ?usp=drive_link)
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🔥 Key Features
 
-In the output, you'll find options to open the app in a
+- **Authentication**  
+  – Email/password login with client-side validation  
+  – “Preparing Pets…” loading screen (Lottie paw spinner)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Pet Profile**  
+  – View & edit pet name, age, avatar (using `expo-image-picker`)  
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Button Pairing**  
+  – Two-step mock BLE/Wi-Fi provisioning flow  
+    1. Confirm SSID & “Next”  
+    2. Tap “Pair Button” → success toast  
 
-## Get a fresh project
+- **Custom Buttons**  
+  – Create, update, delete buttons with label, color picker, preview-sound toggle  
 
-When you're ready, run:
+- **Realtime Feedback**  
+  – Logs each button press to Redux + persist  
+  – Text-to-Speech feedback via `expo-speech`  
+  – “Recent Activity” card on Home  
 
-```bash
-npm run reset-project
-```
+- **History**  
+  – Full activity log with “Clear History”  
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- **State Management**  
+  – Redux Toolkit + `redux-persist` for type-safe, persistent global state  
 
-## Learn more
+- **Animations & UI**  
+  – Lottie paw animations for loading & pairing  
+  – Modern, rounded design with dynamic contrast  
 
-To learn more about developing your project with Expo, look at the following resources:
+- **Testing & CI/CD**  
+  – Unit & integration tests with Jest & React Testing Library  
+  – GitHub Actions pipeline (build → lint → test → Expo preview)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 🚀 Tech Stack
 
-Join our community of developers creating universal apps.
+- **Framework:** React Native · Expo SDK  
+- **Language:** TypeScript  
+- **State:** Redux Toolkit · redux-persist  
+- **Animations:** lottie-react-native  
+- **Audio & TTS:** expo-av · expo-speech  
+- **Networking Mock:** `expo-network` → SSID detection  
+- **Testing:** Jest · React Testing Library  
+- **CI:** GitHub Actions  
+- **Code Quality:** ESLint · Prettier  
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# fluentpet
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js ≥ 16  
+- Yarn or npm  
+- Expo CLI:  
+  ```bash
+  npm install -g expo-cli
