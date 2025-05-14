@@ -54,7 +54,7 @@ export default function LoginScreen() {
     }
 
     name.trim() && pass.trim() && dispatch(login(name.trim()));
-    router.replace('/loading');   // your 4-s “Preparing Pets” screen
+    router.replace('/loading');   // 4-s “Preparing Pets” screen
   };
 
   return (

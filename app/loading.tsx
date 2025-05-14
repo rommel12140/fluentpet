@@ -14,7 +14,7 @@ export default function PreparingPets() {
   return (
     <View style={styles.container}>
       <LottieView
-        source={require('@/assets/lottie/dog-run.json')} // your running-dog JSON
+        source={require('@/assets/lottie/dog-run.json')} // running-dog JSON
         autoPlay
         loop
         style={{ width: 220, height: 220 }}
