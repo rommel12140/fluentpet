@@ -1,4 +1,4 @@
-# PetSpeak – FluentPet-Style Demo App
+# PetSpeak – FluentPet-Style FRONT END ONLY Mock-Demo App
 
 A cross-platform mobile proof-of-concept built in **2 days** to showcase expertise in React Native, Expo, and TypeScript. PetSpeak mirrors the core user journeys of the FluentPet app—device pairing, pet profiles, sound feedback, and activity history—so you can quickly evaluate my ability to architect, implement, and ship production-ready mobile features.
 
