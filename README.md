@@ -1,53 +1,73 @@
-PetSpeak – FluentPet-Style Demo App
-A cross-platform mobile demo built in 2 days to showcase expertise in React Native, Expo, and TypeScript. PetSpeak replicates the core user journeys of the FluentPet app—device pairing, pet profiles, sound feedback, and activity history—so you can quickly evaluate my ability to architect, implement, and ship production-ready mobile features.
+# PetSpeak – FluentPet-Style Demo App
 
-🔥 Key Features
-Authentication
-Email/password login with client-side validation and a “Preparing Pets…” loading screen.
+A cross-platform mobile proof-of-concept built in **2 days** to showcase expertise in React Native, Expo, and TypeScript. PetSpeak mirrors the core user journeys of the FluentPet app—device pairing, pet profiles, sound feedback, and activity history—so you can quickly evaluate my ability to architect, implement, and ship production-ready mobile features.
 
-Pet Profile
-View and edit your pet’s name, age, and avatar (with expo-image-picker).
+---
 
-Button Pairing
-Two-step mock BLE/Wi-Fi provisioning flow:
+## 📺 Demo Video
 
-Confirm SSID & “Connect Base”
+[Watch the walkthrough on Google Drive](https://your-google-drive-link)
 
-“Pair Button” tap → toast confirmation
+---
 
-Button Grid
-Create, update, and delete custom buttons with label, color picker, and sound-preview toggle.
+## 🔥 Key Features
 
-Realtime Feedback
-Logs each button press, plays TTS via expo-speech, and displays a Recent Activity card.
+- **Authentication**  
+  – Email/password login with client-side validation  
+  – “Preparing Pets…” loading screen (Lottie paw spinner)
 
-History
-Full activity log with clear / reset functionality.
+- **Pet Profile**  
+  – View & edit pet name, age, avatar (using `expo-image-picker`)  
 
-State Management
-Redux Toolkit + redux-persist for type-safe, persistent global state.
+- **Button Pairing**  
+  – Two-step mock BLE/Wi-Fi provisioning flow  
+    1. Confirm SSID & “Next”  
+    2. Tap “Pair Button” → success toast  
 
-Animations & UI Polish
-Lottie loading paw animations; modern, rounded design with dynamic theming.
+- **Custom Buttons**  
+  – Create, update, delete buttons with label, color picker, preview-sound toggle  
 
-Testing & CI/CD
-Jest + React Testing Library unit/integration tests; GitHub Actions pipeline for build → lint → test → Expo preview.
+- **Realtime Feedback**  
+  – Logs each button press to Redux + persist  
+  – Text-to-Speech feedback via `expo-speech`  
+  – “Recent Activity” card on Home  
 
-🚀 Tech Stack
-Framework: React Native · Expo SDK
+- **History**  
+  – Full activity log with “Clear History”  
 
-Language: TypeScript
+- **State Management**  
+  – Redux Toolkit + `redux-persist` for type-safe, persistent global state  
 
-State: Redux Toolkit · redux-persist
+- **Animations & UI**  
+  – Lottie paw animations for loading & pairing  
+  – Modern, rounded design with dynamic contrast  
 
-Animations: lottie-react-native
+- **Testing & CI/CD**  
+  – Unit & integration tests with Jest & React Testing Library  
+  – GitHub Actions pipeline (build → lint → test → Expo preview)
 
-Audio & TTS: expo-av · expo-speech
+---
 
-Networking Mock: Stubs for BLE (react-native-ble-plx) & MQTT/WebSocket
+## 🚀 Tech Stack
 
-Testing: Jest · React Testing Library
+- **Framework:** React Native · Expo SDK  
+- **Language:** TypeScript  
+- **State:** Redux Toolkit · redux-persist  
+- **Animations:** lottie-react-native  
+- **Audio & TTS:** expo-av · expo-speech  
+- **Networking Mock:** `expo-network` → SSID detection  
+- **Testing:** Jest · React Testing Library  
+- **CI:** GitHub Actions  
+- **Code Quality:** ESLint · Prettier  
 
-CI: GitHub Actions
+---
 
-Code Quality: ESLint · Prettier
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js ≥ 16  
+- Yarn or npm  
+- Expo CLI:  
+  ```bash
+  npm install -g expo-cli
